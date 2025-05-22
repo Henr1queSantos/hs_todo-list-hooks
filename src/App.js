@@ -43,6 +43,15 @@ function App() {
     setNewTask("");
   };
 
+
+  useEffect(() => {
+  if (darkMode) {
+    document.body.classList.add("dark");
+  } else {
+    document.body.classList.remove("dark");
+  }
+  }, [darkMode]);
+
   const handleDeleteTask = (indexToDelete) => {
     const updatedTasks = tasks.filter((_, index) => index !== indexToDelete);
     setTasks(updatedTasks);

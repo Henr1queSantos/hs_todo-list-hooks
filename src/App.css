@@ -106,3 +106,14 @@
   background-color: #bb86fc;
   color: #121212;
 }
+
+/* Light mode (default) */
+body {
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+/* Dark mode */
+body.dark {
+  background-color: #000;
+}
